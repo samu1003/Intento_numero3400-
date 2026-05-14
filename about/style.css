@@ -1,0 +1,116 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: Arial, sans-serif;
+  background: #fff8f5;
+  color: #333;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #dcd2d2;
+}
+
+nav a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: #333;
+}
+
+nav a:hover {
+  color: black;
+}
+
+/* HERO */
+.hero {
+  height: 80vh;
+  background: url("hero-bakery.jpg") center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+/* SECTION */
+.section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* GRID */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+/* CARD */
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* IMAGES */
+.responsive-img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* ABOUT IMAGE */
+.chef {
+  max-width: 250px;
+  margin: 20px auto;
+  display: block;
+}
+
+/* BUTTON */
+.btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #613f3f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background: black;
+}
+
+/* FOOTER */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 10px;
+  }
+}
